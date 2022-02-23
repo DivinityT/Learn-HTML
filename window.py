@@ -4,12 +4,15 @@ import src.inapp_text.inapp_text as text
 
 # premiere fenetre
 win = tk.Tk()
-test1 = tk.IntVar()
-test2 = tk.IntVar()
 
 # Constantes
 bg = '#DFDFDF'
 font = "Rajdhani"
+
+# Radio
+radio1 = tk.IntVar()
+radio2 = tk.IntVar()
+varRb = tk.IntVar()
 
 # creer un frame
 frame1 = tk.Frame(win, bg=bg, border=1, relief=tk.SUNKEN)
@@ -37,16 +40,16 @@ txt_3 = tk.Label(frame1, text=text.qst_1, font=(font, 15), bg=bg)
 # bouton
 btn = tk.Button(frame1, text="Vérification", font=(font, 15))
 
-# cases à cochers
-check = tk.Checkbutton(frame1, text="Vrai", font=(font, 25), variable=test1, bg=bg)
-check2 = tk.Checkbutton(frame1, text="Faux", font=(font, 25), variable=test2, bg=bg)
+# Cases à cocher
+radio1 = tk.Radiobutton(frame1, text="Vrai", font=(font,15), bg=bg, variable=varRb, value=radio1)
+radio2 = tk.Radiobutton(frame1, text="Faux", font=(font,15), bg=bg, variable=varRb, value=radio2)
 
 # pack()
 txt_1.pack()
 txt_2.pack()
 txt_3.pack(pady=(20, 0))
-check.pack()
-check2.pack()
+radio1.pack()
+radio2.pack()
 btn.pack(pady=15, fill=tk.X)
 frame1.pack(expand="yes", fill="both", pady=10, padx=10)
 frame2.pack(expand="yes", fill="both", pady=10, padx=10)
