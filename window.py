@@ -28,13 +28,13 @@ frame = tk.Frame(canvas)
 
 # personalisation de la fenetre
 win.title("Learn HTML !")
-win.minsize(1080, 720)
+win.minsize(1080, 500)
 win.iconbitmap("src/pic/logo.ico")
 win.config(background=bg)
 
 # texte
-txt_1 = tk.Label(frame1, text=text.head_title, font=(font, 35), bg=bg)
-txt_2 = tk.Label(frame1, text="avec notre superbe application !", font=(font, 20), bg=bg)
+txt_1 = tk.Label(win, text=text.head_title, font=(font, 35), bg=bg)
+txt_2 = tk.Label(win, text="avec notre superbe application !", font=(font, 20), bg=bg)
 txt_3 = tk.Label(frame1, text=text.qst_1, font=(font, 15), bg=bg)
 
 # bouton
@@ -51,8 +51,7 @@ txt_3.pack(pady=(20, 0))
 radio1.pack()
 radio2.pack()
 btn.pack(pady=15, fill=tk.X)
-frame1.pack(expand="yes", fill="both", pady=10, padx=10)
-frame2.pack(expand="yes", fill="both", pady=10, padx=10)
+frame1.pack(fill="x", pady=10, padx=10)
 
 # afficher
 win.mainloop()
