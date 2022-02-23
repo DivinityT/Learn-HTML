@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+import src.inapp_text.inapp_text as text
 
 # premiere fenetre
 win = tk.Tk()
@@ -29,9 +30,9 @@ win.iconbitmap("src/pic/logo.ico")
 win.config(background=bg)
 
 # texte
-txt_1 = tk.Label(frame1, text="Learn HTML !", font=(font, 35), bg=bg)
+txt_1 = tk.Label(frame1, text=text.head_title, font=(font, 35), bg=bg)
 txt_2 = tk.Label(frame1, text="avec notre superbe application !", font=(font, 20), bg=bg)
-txt_3 = tk.Label(frame1, text="Cette application est bien.", font=(font, 15), bg=bg)
+txt_3 = tk.Label(frame1, text=text.qst_1, font=(font, 15), bg=bg)
 
 # bouton
 btn = tk.Button(frame1, text="Vérification", font=(font, 15))
