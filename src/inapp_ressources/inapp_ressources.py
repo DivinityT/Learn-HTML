@@ -6,7 +6,7 @@ def verif_qst(answer):
 
 
 def react_qst1(answer, target_text):
-    if verif_qst(answer) == True:
-        target_text.set(text.true_answ)
-    else:
+    if verif_qst(answer) != True:
         target_text.set(text.false_answ)
+    else:
+        target_text.set(text.true_answ)
