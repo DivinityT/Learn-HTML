@@ -2,11 +2,19 @@ import Learn_HTML.src.inapp_text.inapp_text as text
 
 
 def verif_qst(answer):
+    print(answer)
+    if answer > 1:
+        print("returned None")
+        return None
+
     return True if answer == 1 else False
 
 
 def react_qst1(answer, target_text):
-    if verif_qst(answer) != True:
-        target_text.set(text.false_answ)
-    else:
+    answer = verif_qst(answer)
+    if answer == True:
         target_text.set(text.true_answ)
+    elif answer == None:
+        target_text.set(text.no_answ)
+    else:
+        target_text.set(text.false_answ)

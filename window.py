@@ -16,7 +16,7 @@ font = "Rajdhani"
 
 # Radio
 RadioVar = tk.IntVar()
-RadioVar.set(None)
+RadioVar.set(2)
 
 # creer un frame
 frame1 = tk.Frame(win, bg=bg, border=1, relief=tk.SUNKEN)
