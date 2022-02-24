@@ -2,9 +2,7 @@ import Learn_HTML.src.inapp_text.inapp_text as text
 
 
 def verif_qst(answer):
-    print(answer)
     if answer > 1:
-        print("returned None")
         return None
 
     return True if answer == 1 else False

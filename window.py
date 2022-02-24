@@ -26,8 +26,8 @@ frame2 = tk.Frame(win, bg=bg, border=1, relief=tk.SUNKEN)
 canvas = tk.Canvas(frame2)
 
 # scroll bar
-yscrollbar = ttk.Scrollbar(frame1, orient="vertical", command=canvas.yview)
-yscrollbar.pack(side="right", fill="y")
+#yscrollbar = ttk.Scrollbar(frame1, orient="vertical", command=canvas.yview)
+#yscrollbar.pack(side="right", fill="y")
 frame = tk.Frame(canvas)
 
 # personalisation de la fenetre
